@@ -1,0 +1,6 @@
+unicorn
+fastapi
+structlog
+sqlachemy
+pandas
+scikit-learn

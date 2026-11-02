@@ -1,0 +1,15 @@
+project: Predictor API & Local Data Warehouse
+Build a production-grade FastAPI application that takes an input parameter JSON payload, passes features into a locally trained Scikit-Learn or XGBoost classification pipeline, registers the input metrics and predictions securely inside a PostgreSQL instance, and returns an async response. The operational catch: wrap the API backend and database layers cleanly into a single docker-compose.yml file. This replaces the basic text metadata project with true local traditional model inference.
+
+
+
+Core Technical Skills to Master
+- Advanced Python: Type hinting, validation via Pydantic, structured logging handles, asynchronous runtimes (asyncio), and high-performance structural web APIs using FastAPI.
+- The Data Engine & SQL: Relational database design templates, multi-table joins, window functions, query indexes, and transaction logging inside a PostgreSQL instance.
+- Containerization: Writing optimized multi-stage Dockerfiles to discard compiler layers, isolating local network boundaries, and orchestrating multi-container systems via Docker Compose.
+    
+    
+    
+Weeks 1 & 2: Production Python & Predictive APIs:
+- Learning: Advanced type safety, validation loops, and async event mechanics.
+- Coding: Build a FastAPI framework mapping inputs directly to an offline Scikit-Learn pipeline template.
