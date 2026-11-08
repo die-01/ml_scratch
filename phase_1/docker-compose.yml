@@ -1,22 +1,17 @@
-version: ''
+version: '1.0'
 
 services:
-  db:
+  postgres_db:
     image: postgres
+    container_name: fatsapi_postgres_model
     restart: always
-    # set shared memory limit when using docker compose
     shm_size: 128mb
-    # or set shared memory limit when deploy via swarm stack
-    #volumes:
-    #  - type: tmpfs
-    #    target: /dev/shm
-    #    tmpfs:
-    #      size: 134217728 # 128*2^20 bytes = 128Mb
     environment:
-      POSTGRES_PASSWORD: adminpass
-
-  adminer:
-    image: adminer
-    restart: always
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - 8080:8080
+     - "${POSTGRES_PORT}:5432"
+volumes:
+     - postgres_data:/var/lib/postgresql/data
+

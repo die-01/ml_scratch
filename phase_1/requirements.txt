@@ -1,6 +1,12 @@
 unicorn
 fastapi
 structlog
-sqlachemy
+# SQLAlchemy
+asyncpg
 pandas
 scikit-learn
+pydantic
+joblib
+sqlalchemy[asyncio]
+uvicorn[standard]
+# sklearn[linear_model]
